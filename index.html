@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" href="img/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="sass/main.css" />
+
+    <title>Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+
+  <body>
+    <div class="attribution attribution__blue">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Genevieve Navales</a>.
+    </div>
+
+    <section class="calc-container">
+      <div class="calc">
+        <div class="calc__header" id="header">
+          <h2 class="calc__header--title">calc</h2>
+          <div class="toggle__container">
+            <h3 class="labels-toggle">1 2 3</h3>
+            <span class="theme-title">theme</span>
+            <div class="switch-toggle color__bluebg">
+              <input
+                type="radio"
+                id="blue"
+                class="switch-toggle__item theme__blue"
+              />
+              <label
+                for="blue"
+                onclick=""
+                class="slider slider-primary__blue"
+              ></label>
+              <input
+                type="radio"
+                id="light"
+                class="switch-toggle__item theme__light"
+              />
+              <label for="light" onclick="" class="slider-secondary"> </label>
+              <input
+                type="radio"
+                id="party"
+                class="switch-toggle__item theme__party"
+              />
+              <label for="party" onclick="" class="slider-secondary"> </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc__screen">
+          <input
+            type="text"
+            placeholder="0"
+            class="calc__screen--input screen-input--blue"
+            readonly
+          />
+        </div>
+
+        <div class="calc__row--container" id="calc-bg">
+          <div class="calc__row">
+            <button
+              class="calc__row--col calc__row--col-num-blue col-1-of-4"
+              value="7"
+            >
+              7
+            </button>
+            <button
+              class="calc__row--col calc__row--col-num-blue col-1-of-4"
+              value="8"
+            >
+              8
+            </button>
+            <button
+              class="calc__row--col calc__row--col-num-blue col-1-of-4"
+              value="9"
+            >
+              9
+            </button>
+            <button
+              class="calc__row--col calc__row--col-word-blue col-1-of-4"
+              value="del"
+            >
+              del
+            </button>
+          </div>
+          <div class="calc__row">
+            <button
+              class="calc__row--col calc__row--col-num-blue col-1-of-4"
+              value="4"
+            >
+              4
+            </button>
+            <button
+              class="calc__row--col calc__row--col-num-blue col-1-of-4"
+              value="5"
+            >
+              5
+            </button>
+            <button
+              class="calc__row--col calc__row--col-num-blue col-1-of-4"
+              value="6"
+            >
+              6
+            </button>
+            <button
+              class="calc__row--col calc__row--col-num-blue col-1-of-4"
+              value="÷"
+            >
+              ÷
+            </button>
+          </div>
+          <div class="calc__row">
+            <button
+              class="calc__row--col calc__row--col-num-blue col-1-of-4"
+              value="1"
+            >
+              1
+            </button>
+            <button
+              class="calc__row--col calc__row--col-num-blue col-1-of-4"
+              value="2"
+            >
+              2
+            </button>
+            <button
+              class="calc__row--col calc__row--col-num-blue col-1-of-4"
+              value="3"
+            >
+              3
+            </button>
+            <button
+              class="calc__row--col calc__row--col-num-blue col-1-of-4"
+              value="-"
+            >
+              -
+            </button>
+          </div>
+          <div class="calc__row">
+            <button
+              class="calc__row--col calc__row--col-num-blue col-1-of-4"
+              value="."
+              id="dot"
+            >
+              .
+            </button>
+            <button
+              class="calc__row--col calc__row--col-num-blue col-1-of-4"
+              value="0"
+            >
+              0
+            </button>
+            <button
+              class="calc__row--col calc__row--col-num-blue col-1-of-4"
+              value="+"
+            >
+              +
+            </button>
+            <button
+              class="calc__row--col calc__row--col-num-blue col-1-of-4"
+              value="x"
+            >
+              x
+            </button>
+          </div>
+          <div class="calc__row">
+            <button
+              class="calc__row--col calc__row--col-word-blue col-2-of-4"
+              value="res"
+            >
+              reset
+            </button>
+            <button
+              class="calc__row--col calc__row--col-word2-blue col-2-of-4"
+              value="eql"
+            >
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="app.js"></script>
+    <script src="themes.js"></script>
+  </body>
+</html>
